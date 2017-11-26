@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп «Бородинский»</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -41,8 +41,8 @@
       <div class="features-item">
         <b>Быстро</b>
         <p>
-          Мы делаем свою работу быстро! Два часа <br>
-          пролетят незаметно и Вы - счастливый <br>
+          Мы делаем свою работу быстро! Два часа<br>
+          пролетят незаметно и Вы - счастливый<br>
           обладатель стильной стрижки-минутки!
         </p>
       </div>
@@ -58,8 +58,8 @@
         <b>Долго</b>
         <p>
           Наши мастера - профессионалы своего дела  и<br>
-         не могут стоить дешево. К тому же, разве цена<br>
-         не дает определенный статус?
+          не могут стоить дешево. К тому же, разве цена<br>
+          не дает определенный статус?
         </p>
       </div>
     </section>
@@ -70,14 +70,13 @@
             <p>
               Нам наконец завезли ягермайстер! Теперь Вы можете пропустить стаканчик во время стрижки
             </p>
-            <time  datetime="2016-01-11">11 января</time>
+            <time datetime="2016-01-11">11 января</time>
           </li>
           <li>
             <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
             <time datetime="2016-01-18">18 января</time>
           </li>
         </ul>
-        
         <a href="#" class="btn">Все новости</a>
       </div>
       <div class="index-content-right">
@@ -85,7 +84,6 @@
         <div class="gallery">
           <figure>
             <img src="#" alt="photo galaries">
-
           </figure>
           <button class="btn" type="button">Назад</button>
           <button class="btn" type="button">Вперед</button>
@@ -110,19 +108,19 @@
       </div>
       <div class="index-content-right">
         <h2 class="index-content-title">Записаться</h2>
+        <p>
+          Укажите желаемую дату и время и мы свяжемся
+          с вами для подтверждения брони
+        </p>
         <form class="appointment-form" action="https:/echo.htmlacademy.ru" method="post">
-          <p>
-            Укажите желаемую дату и время и мы свяжемся
-            с вами для подтверждения брони
-          </p>
-          <label for="date">Дата</label>
-          <input type="text" name="date">
-          <label for="time">Время</label>
-          <input type="text" name="time">
-          <label for="name">Ваше имя</label>
-          <input type="text" name>
-          <label for="phone ">Телефон</label>
-          <input type="tel" name="phone">
+          <label for="form-date">Дата</label>
+          <input id="form-date" type="text">
+          <label for="form-time">Время</label>
+          <input id="form-time" type="text">
+          <label for="form-name">Ваше имя</label>
+          <input id="form-name" type="text" >
+          <label for="form-phone ">Телефон</label>
+          <input id="form-phone" type="tel">
           <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -131,16 +129,18 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="footer-contacts">
-        Барбершоп «Бородинский»<br>
-        адрес: г.Санкт-Петербург ул. Б.Конющенная, д. 19/8
-        <a href="#">Как нас найти?</a>
-        телефон: +7(495)666-02-66
+        <p class="footer-adress">
+          Барбершоп «Бородинский»<br>
+          адрес: г.Санкт-Петербург ул. Б.Конющенная, д. 19/8
+          <a href="#">Как нас найти?</a>
+          телефон: +7(495)666-02-66
+        </p>
       </div>
       <div class="footer-socials">
         <p>Давайте дружить!</p>
         <a href="#" class="social-btn social-vk">Вконтакте</a>
-        <a href="#" class="social-btn social-fb">Фейсбук</a>
-        <a href="#" class="social-btn social-inst">Истаграм</a>
+        <a href="#" class="social-btn social-fb">Facebook</a>
+        <a href="#" class="social-btn social-inst">Instagram</a>
       </div>
       <div class="footer-develop">
         <a href="nikolaysalinder.ru" class="login">Nikolay Salinder</a>

@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      src: ['./assets/img/sprite/index-logo.png'],
+      src: ['../assets/img/sprite/index-logo.png'],
     };
   },
 };

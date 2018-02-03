@@ -1,0 +1,100 @@
+.cross------, .cross-checked, .facebook, .facebook------, .instagram, .instagram------, .lock, .login, .radio-block, .shape-2-copy-4, .shape-2-copy-4@2x, .unchecked, .unchecked-block, .user, .vk, .vk------{
+	background: url(sprites.png) no-repeat;
+}
+
+.cross------{
+	background-position: -114px -60.993751525878906px ;
+	width: 19px;
+	height: 19px;
+}
+
+.cross-checked{
+	background-position: -18px -66.9937515258789px ;
+	width: 12px;
+	height: 12px;
+}
+
+.facebook{
+	background-position: -168px -17px ;
+	width: 11px;
+	height: 22px;
+}
+
+.facebook------{
+	background-position: -119px -16px ;
+	width: 11px;
+	height: 22px;
+}
+
+.instagram{
+	background-position: -261px -18px ;
+	width: 20px;
+	height: 20px;
+}
+
+.instagram------{
+	background-position: -213px -18px ;
+	width: 20px;
+	height: 20px;
+}
+
+.lock{
+	background-position: -266px -60.99999237060547px ;
+	width: 13px;
+	height: 15px;
+}
+
+.login{
+	background-position: -356px -70.98749542236328px ;
+	width: 14px;
+	height: 14px;
+}
+
+.radio-block{
+	background-position: -320px -67.99999237060547px ;
+	width: 8px;
+	height: 10px;
+}
+
+.shape-2-copy-4{
+	background-position: -364.00001859664917px -16px ;
+	width: 21px;
+	height: 20px;
+}
+
+.shape-2-copy-4@2x{
+	background-position: -303.00001859664917px -6px ;
+	width: 41px;
+	height: 40px;
+}
+
+.unchecked{
+	background-position: -160.0000033378601px -58.98750305175781px ;
+	width: 20px;
+	height: 20px;
+}
+
+.unchecked-block{
+	background-position: -210px -59.98749542236328px ;
+	width: 20px;
+	height: 20px;
+}
+
+.user{
+	background-position: -63px -63.993751525878906px ;
+	width: 13px;
+	height: 13px;
+}
+
+.vk{
+	background-position: -60px -18px ;
+	width: 27px;
+	height: 15px;
+}
+
+.vk------{
+	background-position: -10px -17px ;
+	width: 27px;
+	height: 15px;
+}
+

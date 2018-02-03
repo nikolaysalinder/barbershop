@@ -128,9 +128,9 @@ body {
 
 }
 /*стили для разработки*/
-div, li, nav, ul, header, footer, .container, figure {
+/*div, li, nav, ul, header, footer, .container, figure {
   outline: 1px solid green;
-}
+}*/
 /*стили для разработки*/
 
 .container {

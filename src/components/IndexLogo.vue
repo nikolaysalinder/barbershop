@@ -1,6 +1,6 @@
 <template>
     <div class="index-logo clearfix">
-      <img src="../assets/img/index-logo.png" :alt="alt" >
+      <img :src="src[0]" alt="Барбершоп «Бородинский»">
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      alt: 'Барбершоп «Бородинский»',
+      src: ['./assets/img/sprite/index-logo.png'],
     };
   },
 };

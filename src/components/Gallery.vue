@@ -13,9 +13,9 @@
         type="button"
         @click.prevent="prevImage">Назад</button>
       <button
-      class="btn btn-gallery-next"
-      type="button"
-      @click.prevent="nextImage">Вперед</button>
+        class="btn btn-gallery-next"
+        type="button"
+        @click.prevent="nextImage">Вперед</button>
     </div>
   </div>
 </template>
@@ -26,10 +26,10 @@ export default {
     return {
       index: 0,
       images: [
-        '/static/img/gallery-1.jpg',
-        '/static/img/gallery-2.jpg',
-        '/static/img/gallery-3.jpg',
-        '/static/img/gallery-4.jpg',
+        './static/img/gallery-1.jpg',
+        './static/img/gallery-2.jpg',
+        './static/img/gallery-3.jpg',
+        './static/img/gallery-4.jpg',
       ],
     };
   },

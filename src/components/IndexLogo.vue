@@ -1,6 +1,6 @@
 <template>
     <div class="index-logo clearfix">
-      <img src="../assets/img/index-logo.png" :alt="alt" >
+      <img src="assets/img/index-logo.png" :alt="alt" >
     </div>
 </template>
 

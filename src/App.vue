@@ -160,7 +160,7 @@ body {
   background: #663d15;
 }
 input:hover {
-  border: 3p #663d15;
+  border: 3px #663d15;
 }
 </style>
 

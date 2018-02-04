@@ -111,7 +111,7 @@ export default {
 
 <style>
 body {
-  background: #000 url("./assets/img/index-bg.jpg");
+  background-color: #000;
   background-position: 50% 40px;
   background-size: 2520px;
   background-repeat: no-repeat;

@@ -2,28 +2,22 @@
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
-        <ul class="top-navigation">
-          <li>
-           <a href="">
-            <img src="../assets/img/sprite/header-logo.png" alt="Барбершоп Бородинский">
+        <transition-group tag="ul" name="slide-fade" class="top-navigation">
+             <router-link
+          v-for="link in links"
+          :key="link.path"
+          :to="link.path"
+          tag="li"
+          :class="[link.hide && isIndex ? 'hide' : '']"
+          exact>
+          <a :class="[link.hide && isIndex ? 'hide' : '']">{{ link.text }}
+            <img
+            v-if="link.path == '/' && !isIndex"
+            src="../assets/img/sprite/header-logo.png"
+            alt="Барбершоп Бородински">
           </a>
-        </li>
-        <li>
-          <a href="#">Информация</a>
-        </li>
-        <li>
-          <a href="#">Новости</a>
-        </li>
-        <li>
-          <a href="price.html">Прайс-лист</a>
-        </li>
-        <li>
-          <a href="shop.html">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
+        </router-link>
+      </transition-group>
     </nav>
     <div class="user-block">
       <a href="#">Вход</a>
@@ -32,16 +26,53 @@
 </header>
 </template>
 <script>
+
 export default {
   data() {
     return {
-
+      links: [
+        { path: '/', text: '', hide: true },
+        { path: '/informations', text: 'Информация', hide: false },
+        { path: '/news', text: 'Новости', hide: false },
+        { path: '/price', text: 'Прайс-лист', hide: false },
+        { path: '/shop', text: 'Магазин', hide: false },
+        { path: '/contacts', text: 'Контакты', hide: false },
+      ],
     };
+  },
+  computed: {
+    isIndex() {
+      return this.$route.name === 'Index';
+    },
+  },
+  methods: {
+    remove() {
+      this.links.splice(0, 1);
+    },
   },
 };
 </script>
 
 <style>
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.slide-fade-enter-active {
+  transition: all .5s;
+}
+.slide-fade-leave {
+}
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade-move {
+  transition: all .8s;
+}
+.top-navigation li.router-link-active.hide {
+  display: none;
+}
 .main-navigation {
   float: left;
   width: 780px;

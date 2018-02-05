@@ -49,7 +49,7 @@ export default {
     font-size: 14px;
     text-align: center;
     background:
-      url("../assets/img/romb.svg") no-repeat 129px 35px;
+      url("../../assets/img/romb.svg") no-repeat 129px 35px;
     background-size: 40px;
   }
   .features-item b {

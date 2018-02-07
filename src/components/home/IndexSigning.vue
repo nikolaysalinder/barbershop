@@ -14,12 +14,14 @@
           id="form-date"
           name="date"
           type="text" placeholder="11.11.11"
-          v-model="appointment.date">
+          v-model="appointment.date"
+          required>
           <input
           id="form-time"
           name="time"
           type="text" placeholder="11:12"
-          v-model="appointment.time">
+          v-model="appointment.time"
+          required>
           <label for="form-name">Ваше имя</label>
           <label for="form-phone">Телефон</label>
           <input
@@ -27,13 +29,15 @@
           name="name"
           type="text"
           placeholder="Борода"
-          v-model="appointment.name">
+          v-model="appointment.name"
+          required>
           <input
           id="form-phone"
           name="phone"
           type="text"
           placeholder="8 911 111 11 11"
-          v-model="appointment.phone">
+          v-model="appointment.phone"
+          required>
           <button class="btn btn-sign" type="submit" @click.prevent="sendForm">Отправить</button>
         </form>
       </div>
@@ -43,7 +47,7 @@
           в {{ appointment.time }}!<br>
           Ваш номер {{ appointment.phone }}<br>
           Наш менеджер свяжется с Вами в ближайшее время.<br><br>
-          Чтобы побрить Вас!
+          Бородатого дня!
         </p>
       </div>
     </transition>
@@ -118,9 +122,10 @@ export default {
   width: 106px;
   margin-right: 20px;
   padding: 7px 15px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
   text-transform: uppercase;
   background-color: #f9f6f3;
   border: 2px solid #000;
@@ -134,8 +139,9 @@ export default {
   padding-bottom: 7px;
   width: 106px;
 }
-.index-signing input:hover {
-  border: 2px solid;
+.index-signing input:hover,
+.index-signing input:active {
+  border: 2px solid #663d15;
 }
 .index-signing input:nth-child(2n),
 .index-signing label:nth-child(2n) {

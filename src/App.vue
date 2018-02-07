@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <app-header></app-header>
+  <div id="app" :class='{ app: isIndex }'>
+    <app-header :isIndex="isIndex"></app-header>
     <main class="container clearfix">
       <router-view></router-view>
     </main>
@@ -11,12 +11,17 @@
 <script>
 export default {
   name: 'App',
+  computed: {
+    isIndex() {
+      return this.$route.name === 'Index';
+    },
+  },
 };
 </script>
 
 <style>
 /*стили для разработки*/
-div, li, nav, ul, header, footer, .container, figure {
+a, div, li, nav, ul, header, footer, .container, figure {
   outline: 1px solid green;
 }
 /*стили для разработки*/
@@ -33,7 +38,7 @@ body {
   padding: 0;
   min-width: 960px;
 }
-div#app {
+div.app {
   background: #000 url('./assets/img/index-bg.jpg');
   background-position: 50% 40px;
   background-size: 2520px;
@@ -58,8 +63,6 @@ div#app {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 1.65;
-  letter-spacing: 0.20pt;
   transition: background .5s;
 }
 .btn:hover {

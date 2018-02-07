@@ -11,13 +11,13 @@
       </div>
       <div class="footer-socials">
         <p>Давайте дружить!</p>
-        <a href="https://vk.com/nikolay.salinder" class="social-btn social-vk"></a>
-        <a href="https://www.facebook.com/nikolay.salinder/" class="social-btn social-fb"></a>
-        <a href="https://www.instagram.com/nikolaysalinder/" class="social-btn social-in"></a>
+        <a href="https://vk.com/nikolay.salinder" class="social-btn social-vk">Вконтакте</a>
+        <a href="https://www.facebook.com/nikolay.salinder/" class="social-btn social-fb">Facebook</a>
+        <a href="https://www.instagram.com/nikolaysalinder/" class="social-btn social-in">Instagram</a>
       </div>
       <div class="footer-developer">
         <p>Разработано:</p>
-        <a class="btn" href="http://www.nikolaysalinder.ru">NikolaySalinder.ru</a>
+        <a class="developer" href="http://www.nikolaysalinder.ru">NikolaySalinder.ru</a>
       </div>
     </div>
   </footer>
@@ -55,6 +55,7 @@ export default {
   float: left;
   width: 180px;
   text-align: center;
+  font-size: 0;
 }
 a.social-vk {
   margin-left: 20px;
@@ -97,7 +98,11 @@ a.social-in:hover {
   float: right;
   width: 180px;
 }
-.footer-developer a {
+.footer-developer .developer {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  background: #000;
   transition: 1s;
 }
 .footer-developer a:hover {

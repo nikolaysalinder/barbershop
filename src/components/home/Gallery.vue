@@ -2,17 +2,19 @@
   <div>
     <div class="gallery">
       <figure>
-        <img
+        <transition name="fade">
+          <img
           :src="imgSource"
           alt="Фото галерея"
           height="164"
           width="286">
+        </transition>
       </figure>
       <button
         class="btn btn-gallery-prev"
         type="button"
         @click.prevent="prevImage">Назад</button>
-      <button
+        <button
         class="btn btn-gallery-next"
         type="button"
         @click.prevent="nextImage">Вперед</button>
@@ -81,5 +83,17 @@ export default {
   bottom: 0;
   padding: 10px 42px;
   height: 44px;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 1s;
+}
+.fade-leave {
+}
+.fade-leave-to {
+  transition: opacity 1s;
+
 }
 </style>

@@ -38,7 +38,8 @@ body {
   padding: 0;
   min-width: 960px;
 }
-div#app {
+.app {
+  background: #000 url("assets/img/index-bg.jpg");
   background-position: 50% 40px;
   background-size: 2520px;
   background-repeat: no-repeat;

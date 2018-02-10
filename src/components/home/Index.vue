@@ -52,7 +52,7 @@
           @close="showMap = false">
             <img src="./../../assets/img/map.png" height="560" width="766">
           </app-modal>
-          <a href="#" class="btn disabled">Обратная связь</a>
+          <a href="#" class="btn btn-feedback disabled">Обратная связь</a>
         </div>
       </div>
       <div slot="index-content-right" class="index-content-right">
@@ -81,7 +81,7 @@ export default {
 
 <style>
 .index {
-  background: #000 url("../../assets/img/index-bg.jpg");
+  background: #000 url("./../../assets/img/index-bg.jpg");
   background-position: 50% 0;
   background-size: 2520px;
   background-repeat: no-repeat;

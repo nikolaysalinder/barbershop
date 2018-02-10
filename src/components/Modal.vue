@@ -74,6 +74,7 @@ export default {
   margin-top: -280px;
   margin-left: -390px;
   border: 7px solid white;
+  background: #f8f3f0;
 }
 .modal-content-close {
   position: absolute;

@@ -81,7 +81,7 @@ export default {
 
 <style>
 .index {
-  background: #000 url("./../../assets/img/index-bg.jpg");
+/*  background: #000 url("./../../assets/img/index-bg.jpg");*/
   background-position: 50% 0;
   background-size: 2520px;
   background-repeat: no-repeat;

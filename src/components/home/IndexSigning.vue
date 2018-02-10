@@ -149,7 +149,8 @@ export default {
 }
 .index-signing .btn-sign{
   display: block;
-  padding: 11px 107px;
+  width: 300px;
+  padding: 14px 107px;
   position: absolute;
   bottom: 0;
   left: 0;

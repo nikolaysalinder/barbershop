@@ -14,7 +14,7 @@ export default {
 
 <style>
 #price {
-  height: 500px;
+  height: 300px;
   background: white;
 }
 </style>

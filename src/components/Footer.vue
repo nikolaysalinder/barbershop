@@ -5,7 +5,13 @@
         <p class="footer-adress">
           Барбершоп «Бородинский»<br>
           адрес: г. Санкт-Петербург,ул. Б.Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          <a @click.prevent="showMap = true">Как нас найти?</a><br>
+          <app-modal
+          v-if="showMap"
+          :showMap="showMap"
+          @close="showMap = false">
+            <img src="./../assets/img/map.png" height="560" width="765">
+          </app-modal>
           телефон: +7 (495) 666-02-66
         </p>
       </div>
@@ -27,7 +33,7 @@
 export default {
   data() {
     return {
-
+      showMap: false,
     };
   },
 };
@@ -37,19 +43,26 @@ export default {
 .main-footer {
   margin-top: 33px;
   background:
-    url("../assets/img/sprite/shadow-footer.png") repeat-x,
     #000 url("../assets/img/footer-bg.png");
   padding-top: 42px;
   padding-bottom: 40px;
   letter-spacing: 0.2pt;
+  box-shadow: inset 0px 20px 40px -5px #000;
 }
 .main-footer a {
   color: #fff;
+  cursor:default;
 }
 .footer-contacts {
   float: left;
   margin-right: 60px;
   width: 320px;
+}
+.footer-contacts a {
+  text-decoration: underline;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 .footer-socials {
   float: left;

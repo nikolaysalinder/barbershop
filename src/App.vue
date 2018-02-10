@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class='{ app: isIndex }'>
+  <div id="app">
     <app-header :isIndex="isIndex"></app-header>
     <main class="container clearfix">
       <router-view></router-view>
@@ -11,6 +11,10 @@
 <script>
 export default {
   name: 'App',
+  data() {
+    return {
+    };
+  },
   computed: {
     isIndex() {
       return this.$route.name === 'Index';
@@ -25,23 +29,25 @@ export default {
   outline: 1px solid green;
 }*/
 /*стили для разработки*/
-
+html {
+  margin: 0;
+  padding: 0;
+}
+.overflow {
+  overflow: hidden;
+}
+.body-overflow {
+}
 body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  font-kerning: none;
   text-transform: uppercase;
   color: #fff;
   margin: 0;
   padding: 0;
-  min-width: 960px;
-}
-.app {
-  background-position: 50% 40px;
-  background-size: 2520px;
-  background-repeat: no-repeat;
+  background: #000;
 }
 .container {
   width: 940px;
@@ -63,12 +69,20 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: background .5s;
+  cursor:default;
 }
 .btn:hover {
   background: #663d15;
 }
+.disabled {
+  opacity:.5;
+  cursor:default;
+}
+.disabled:hover {
+  background: #000;
+}
 input:hover {
-  border: 3px #663d15;
+  border: 2px solid #663d15;
 }
 </style>
 

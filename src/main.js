@@ -12,7 +12,7 @@ import Gallery from './components/home/Gallery';
 import IndexSigning from './components/home/IndexSigning';
 import Index from './components/home/Index';
 import Price from './components/price/Price';
-import ModalLogin from './components/ModalLogin';
+import Modal from './components/Modal';
 
 Vue.component('app-header', Header);
 Vue.component('app-index-logo', IndexLogo);
@@ -23,7 +23,7 @@ Vue.component('app-gallery', Gallery);
 Vue.component('app-index-signing', IndexSigning);
 Vue.component('app-index', Index);
 Vue.component('app-price', Price);
-Vue.component('app-modal-login', ModalLogin);
+Vue.component('app-modal', Modal);
 
 Vue.config.productionTip = false;
 

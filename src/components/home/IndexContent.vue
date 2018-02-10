@@ -9,7 +9,6 @@
 export default {
   data() {
     return {
-
     };
   },
 };
@@ -70,13 +69,16 @@ p.index-content-contacts {
 }
 #index-contacts .btn-map {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 74px;
   margin-right: 17px;
   padding-right: 30px;
   padding-left: 29px;
 }
 #index-contacts .btn-feedback {
+  display: inline-block;
+  right: 300px;
   padding-left: 24px;
   padding-right: 24px;
 }
+
 </style>

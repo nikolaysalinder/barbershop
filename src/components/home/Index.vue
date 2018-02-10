@@ -43,8 +43,16 @@
             Пн&#8212;Пт: с 10:00 до 22:00<br>
             Сб&#8212;Вс: с 10:00 до 19:00
           </p>
-          <a href="#" class="btn btn-map">Как проехать</a>
-          <a href="#" class="btn btn-feedback">Обратная связь</a>
+          <a
+          class="btn btn-map"
+          @click="showMap = true">Как проехать</a>
+          <app-modal
+          v-if="showMap"
+          :showMap="showMap"
+          @close="showMap = false">
+            <img src="./../../assets/img/map.png" height="560" width="766">
+          </app-modal>
+          <a href="#" class="btn disabled">Обратная связь</a>
         </div>
       </div>
       <div slot="index-content-right" class="index-content-right">
@@ -59,12 +67,30 @@
 export default {
   data() {
     return {
-
+      showMap: false,
     };
+  },
+  beforeCreate() {
+    document.body.className = 'index';
+  },
+  beforeDestroy() {
+    document.body.classList.remove('index');
   },
 };
 </script>
 
 <style>
-
+.index {
+  background: #000 url("../../assets/img/index-bg.jpg");
+  background-position: 50% 0;
+  background-size: 2520px;
+  background-repeat: no-repeat;
+}
+#map {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 5000px;
+}
 </style>

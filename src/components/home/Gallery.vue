@@ -92,8 +92,11 @@ export default {
 }
 .fade-leave {
 }
-.fade-leave-to {
+.fade-leave-active {
   transition: opacity 1s;
-
+  opacity: 0;
+}
+.fade-move {
+  transition: all 1s;
 }
 </style>

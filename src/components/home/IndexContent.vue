@@ -22,7 +22,7 @@ export default {
   color: #000;
   background-image:
   url('../../assets/img/shadow-thick.png'),
-  url('../../assets/img/sliced-bg.png');
+  url('../../assets/img/inner-bg.png');
   background-position: 465px 50px, 0 0;
   background-repeat: no-repeat, repeat;
   margin-bottom: 35px;

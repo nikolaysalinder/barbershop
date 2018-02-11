@@ -41,6 +41,7 @@ export default {
 
 <style>
 .main-footer {
+  color: #fff;
   margin-top: 33px;
   background:
     #000 url("../assets/img/footer-bg.png");

@@ -49,6 +49,10 @@ body {
   padding: 0;
   background: #000;
 }
+.inner {
+  background: #f8f3f0 url('./assets/img/inner-bg.png');
+  color: #000;
+}
 .container {
   width: 940px;
   padding: 0 10px;

@@ -13,6 +13,7 @@ import IndexSigning from './components/home/IndexSigning';
 import Index from './components/home/Index';
 import Price from './components/price/Price';
 import Modal from './components/Modal';
+import Informations from './components/info/Informations';
 
 Vue.component('app-header', Header);
 Vue.component('app-index-logo', IndexLogo);
@@ -24,6 +25,7 @@ Vue.component('app-index-signing', IndexSigning);
 Vue.component('app-index', Index);
 Vue.component('app-price', Price);
 Vue.component('app-modal', Modal);
+Vue.component('app-info', Informations);
 
 Vue.config.productionTip = false;
 

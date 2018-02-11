@@ -27,14 +27,14 @@ export default {
     const html = document.body.parentElement;
     const body = document.body;
     const scrollWidth = window.innerWidth - html.clientWidth;
-    html.style.marginRight = `${scrollWidth}px`;
+    html.style.marginLeft = `${-1 * scrollWidth}px`;
     html.classList.add('overflow');
     body.classList.add('body-overflow');
   },
   beforeDestroy() {
     const html = document.body.parentElement;
     const body = document.body;
-    html.style.marginRight = 0;
+    html.style.marginLeft = 0;
     html.classList.remove('overflow');
     body.classList.remove('body-overflow');
   },
@@ -62,7 +62,7 @@ export default {
   width: 300px;
   padding: 50px 80px;
   color: #000;
-  background: #f8f3f0 url('../assets/img/sliced-bg.png');
+  background: #f8f3f0 url('../assets/img/inner-bg.png');
 }
 .modal-map {
   position: fixed;

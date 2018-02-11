@@ -109,8 +109,22 @@ export default {
 }
 .top-navigation  li{
   display: block;
+  position: relative;
   float: left;
   list-style: none;
+}
+.main-navigation .router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #fff;
+}
+.main-navigation .router-link-exact-active a:hover{
+  background: none;
+  cursor: default;
 }
 .main-navigation li>a,
 .user-block>a {

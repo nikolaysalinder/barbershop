@@ -25,11 +25,11 @@ export default {
 
 <style>
 /*стили для разработки*/
-/*a, div, li, nav, ul, header,
+a, div, li, nav, ul, header,
 footer, .container, figure, form,
 label, h1, h2 {
   outline: 1px solid green;
-}*/
+}
 /*стили для разработки*/
 html {
   margin: 0;
@@ -50,6 +50,9 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
+}
+#app {
+ min-width: 960px;
 }
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');

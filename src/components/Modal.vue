@@ -43,7 +43,7 @@ export default {
 
 <style>
 .modal-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,.3);
@@ -51,7 +51,7 @@ export default {
   height: 100%;
   z-index: 10;
 }
-.model__overlay:after {
+.model-overlay:after {
   display: inline-block;
   width:  0;
   height: 100%;
@@ -59,7 +59,7 @@ export default {
   content: '';
 }
 .modal {
-  position: absolute;
+  position: fixed;
   box-shadow: 0px 10px 50px 5px #000;
 }
 .modal-login {

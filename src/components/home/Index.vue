@@ -89,11 +89,4 @@ export default {
   background-size: 2520px;
   background-repeat: no-repeat;
 }
-#map {
-  display: block;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 5000px;
-}
 </style>

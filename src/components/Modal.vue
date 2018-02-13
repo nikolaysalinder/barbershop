@@ -3,15 +3,15 @@
     <div
     class="modal-overlay"
     @click.self="$emit('close')">
-    <div
-    :class="['modal', {'modal-login': showLogin }, {'modal-map': showMap }]">
-      <button
-      class="modal-content-close"
-      type="button"
-      title="Закрыть"
-      @click="$emit('close')">Закрыть</button>
-      <slot></slot>
-     </div>
+      <div
+      :class="['modal', {'modal-login': showLogin }, {'modal-map': showMap }]">
+        <button
+        class="modal-content-close"
+        type="button"
+        title="Закрыть"
+        @click="$emit('close')">Закрыть</button>
+        <slot></slot>
+      </div>
     </div>
   </transition>
 </template>
@@ -43,7 +43,7 @@ export default {
 
 <style>
 .modal-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,.3);

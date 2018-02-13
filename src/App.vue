@@ -25,7 +25,9 @@ export default {
 
 <style>
 /*стили для разработки*/
-/*a, div, li, nav, ul, header, footer, .container, figure {
+/*a, div, li, nav, ul, header,
+footer, .container, figure, form,
+label, h1, h2 {
   outline: 1px solid green;
 }*/
 /*стили для разработки*/

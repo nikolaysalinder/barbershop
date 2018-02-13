@@ -22,7 +22,10 @@
             <time datetime="2016-01-18">18 января</time>
           </li>
         </ul>
-        <a href="#" class="btn">Все новости</a>
+        <router-link
+        to="/news"
+        class="btn"
+        tag="a">Все новости</router-link>
       </div>
       <div slot="index-content-right" class="index-content-right">
         <h2 class="index-content-title">Фотогалерея</h2>

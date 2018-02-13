@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Index from '@/components/home/Index';
 import Price from '@/components/price/Price';
 import Informations from '@/components/info/Informations';
+import News from '@/components/news/News';
+import Shop from '@/components/shop/Shop';
 
 Vue.use(Router);
 
@@ -22,6 +24,16 @@ export default new Router({
       path: '/informations',
       name: 'Informations',
       component: Informations,
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: News,
+    },
+    {
+      path: '/shop',
+      name: 'Shop',
+      component: Shop,
     },
   ],
 });

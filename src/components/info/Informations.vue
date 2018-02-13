@@ -1,5 +1,8 @@
 <template>
-  <div id='info'>
+  <div class="info">
+    <app-page-title
+    :pageTitle="pageTitle"
+    :breadcrumbs="breadcrumbs"></app-page-title>
   </div>
 </template>
 
@@ -7,17 +10,15 @@
 export default {
   data() {
     return {
+      pageTitle: 'Информация',
+      breadcrumbs: [
+        { path: '/', page: 'Главная' },
+        { path: '/informations', page: 'Информация' },
+      ],
     };
-  },
-  beforeCreate() {
-    document.body.classList.add('inner');
   },
 };
 </script>
 
 <style>
-.info {
-  display: block;
-  height: 300px;
-}
 </style>

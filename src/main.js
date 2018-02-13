@@ -14,6 +14,9 @@ import Index from './components/home/Index';
 import Price from './components/price/Price';
 import Modal from './components/Modal';
 import Informations from './components/info/Informations';
+import News from './components/news/News';
+import Shop from './components/shop/Shop';
+import PageTitle from './components/PageTitle';
 
 Vue.component('app-header', Header);
 Vue.component('app-index-logo', IndexLogo);
@@ -26,6 +29,9 @@ Vue.component('app-index', Index);
 Vue.component('app-price', Price);
 Vue.component('app-modal', Modal);
 Vue.component('app-info', Informations);
+Vue.component('app-news', News);
+Vue.component('app-shop', Shop);
+Vue.component('app-page-title', PageTitle);
 
 Vue.config.productionTip = false;
 

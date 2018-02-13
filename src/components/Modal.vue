@@ -59,7 +59,7 @@ export default {
   content: '';
 }
 .modal {
-  position: fixed;
+  position: absolute;
   box-shadow: 0px 10px 50px 5px #000;
 }
 .modal-login {
@@ -72,7 +72,6 @@ export default {
   background: #f8f3f0 url('../assets/img/inner-bg.png');
 }
 .modal-map {
-  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 20;

@@ -10,7 +10,7 @@
         type="button"
         title="Закрыть"
         @click="$emit('close')">Закрыть</button>
-        <slot></slot>
+          <slot></slot>
       </div>
     </div>
   </transition>
@@ -50,6 +50,13 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 10;
+}
+.model__overlay:after {
+  display: inline-block;
+  width:  0;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
 }
 .modal {
   position: fixed;

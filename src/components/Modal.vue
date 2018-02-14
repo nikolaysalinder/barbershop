@@ -2,7 +2,7 @@
   <transition name="modal">
     <div
     class="modal-overlay"
-    @click.self="$emit('close')">
+    @click.esc.self="$emit('close')">
       <div
       :class="['modal', {'modal-login': showLogin }, {'modal-map': showMap }]">
         <button
@@ -51,16 +51,17 @@ export default {
   background-color: rgba(0,0,0,.3);
   z-index: 10;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .modal {
-  position: fixed;
+  position: absolute;
   box-shadow: 0px 10px 50px 5px #000;
 }
 .modal-login {
   top: 20%;
   left: 50%;
   margin-left: -230px;
-  width: 300px;
+  max-width: 300px;
   padding: 50px 80px;
   color: #000;
   background: #f8f3f0 url('../assets/img/inner-bg.png');

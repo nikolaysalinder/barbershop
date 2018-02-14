@@ -199,8 +199,6 @@ input[type="radio"]:hover + .radio-indicator {
   margin-top: 48px;
   background: #663d15;
   border: none;
-  font-weight: inherit;
-  line-height: inherit;
 }
 .shop .inner-content-right {
   display: block;

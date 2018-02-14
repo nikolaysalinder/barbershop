@@ -51,10 +51,10 @@ export default {
   height: 100%;
   z-index: 10;
 }
-.model-overlay:after {
-  display: inline-block;
-  width:  0;
-  height: 100%;
+.modal-overlay:after {
+  display: block;
+  width:  100%;
+  height: 10px;
   vertical-align: middle;
   content: '';
 }

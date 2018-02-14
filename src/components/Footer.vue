@@ -43,6 +43,7 @@ export default {
 .main-footer {
   color: #fff;
   margin-top: 33px;
+  height: 100%;
   background:
     #000 url("../assets/img/footer-bg.png");
   padding-top: 42px;

@@ -78,18 +78,18 @@
           <span class="price">{{ good.price }} ₽</span>
           <a href="#" class="btn btn-buy">Купить</a>
         </div>
-        <ul>
+        <ul class="pagination">
           <li>
-            <span class="pagination">1</span>
+            <a class="pagination-item">1</a>
           </li>
           <li>
-            <span class="pagination">2</span>
+            <a class="pagination-item current">2</a>
           </li>
           <li>
-            <span class="pagination">3</span>
+            <a class="pagination-item">3</a>
           </li>
           <li>
-            <span class="pagination">4</span>
+            <a class="pagination-item">4</a>
           </li>
         </ul>
       </div>
@@ -108,12 +108,12 @@ export default {
         { path: '', page: 'Средства для ухода' },
       ],
       goods: [
-        { imgSrc: '/static/img/catalog-item-1.jpg', group: 'Набор для путешествий', brand: '«Baxter of California»', price: '2 900' },
-        { imgSrc: '/static/img/catalog-item-2.jpg', group: 'Увлажняющий кондиционер', brand: '«Baxter of California»', price: '750' },
-        { imgSrc: '/static/img/catalog-item-3.jpg', group: 'Гель для волос', brand: '«Suavecito»', price: '290' },
-        { imgSrc: '/static/img/catalog-item-4.jpg', group: 'Глина для укладки волос', brand: '«American Crew»', price: '500' },
-        { imgSrc: '/static/img/catalog-item-5.jpg', group: 'Гель для волос', brand: '«American Crew»', price: '300' },
-        { imgSrc: '/static/img/catalog-item-6.jpg', group: 'Набор для бритья', brand: '«Baxter of California»', price: '3900' },
+        { imgSrc: './static/img/catalog-item-1.jpg', group: 'Набор для путешествий', brand: '«Baxter of California»', price: '2 900' },
+        { imgSrc: './static/img/catalog-item-2.jpg', group: 'Увлажняющий кондиционер', brand: '«Baxter of California»', price: '750' },
+        { imgSrc: './static/img/catalog-item-3.jpg', group: 'Гель для волос', brand: '«Suavecito»', price: '290' },
+        { imgSrc: './static/img/catalog-item-4.jpg', group: 'Глина для укладки волос', brand: '«American Crew»', price: '500' },
+        { imgSrc: './static/img/catalog-item-5.jpg', group: 'Гель для волос', brand: '«American Crew»', price: '300' },
+        { imgSrc: './static/img/catalog-item-6.jpg', group: 'Набор для бритья', brand: '«Baxter of California»', price: '3900' },
       ],
     };
   },
@@ -226,6 +226,7 @@ input[type="radio"]:hover + .radio-indicator {
   margin-right: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  transition: box-shadow .5s;
 }
 .shop .catalog-item:hover {
   box-shadow: 0px 5px 30px 0 rgba(0, 1, 1, 0.3);
@@ -255,5 +256,28 @@ input[type="radio"]:hover + .radio-indicator {
   display: inline-block;
   padding: 10px 17px;
   margin-left: -3px;
+}
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+.pagination-item {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  float: left;
+  background: #000;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 25px;
+  margin-right: 7px;
+  text-align: center;
+  padding: 10px;
+}
+.pagination .current {
+  color: #000;
+  background: #fff;
 }
 </style>

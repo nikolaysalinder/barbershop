@@ -4,6 +4,7 @@
     <main class="container clearfix">
       <router-view></router-view>
     </main>
+    <iframe v-if="isContacts" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aecd1452e974fd4ce0e372fbf0afc5df4b17e5df1d975aaa87ac4a7c19456b9a4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     <app-footer></app-footer>
   </div>
 </template>
@@ -18,6 +19,9 @@ export default {
   computed: {
     isIndex() {
       return this.$route.name === 'Index';
+    },
+    isContacts() {
+      return this.$route.name === 'Contacts';
     },
   },
 };

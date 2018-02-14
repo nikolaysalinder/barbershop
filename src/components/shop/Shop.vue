@@ -65,15 +65,18 @@
         </form>
       </div>
       <div class="inner-content-right">
-        <div class="catalog-item">
+        <div
+        v-for="good in goods"
+        :key="good.imgSrc"
+        class="catalog-item">
           <img
-          src="/static/img/catalog-item-1.jpg"
-          alt="Baxter of California"
+          :src="good.imgSrc"
+          :alt="good.brand"
           width="220"
           height="165">
-          <p>Набор для путешествий «Baxter of California»</p>
-          <span class="price">2 900 ₽</span>
-          <a href="#" class="btn btn-catalog">Купить</a>
+          <p>{{ good.group }}<br> <span class="uppercase">{{ good.brand }}</span></p>
+          <span class="price">{{ good.price }} ₽</span>
+          <a href="#" class="btn btn-buy">Купить</a>
         </div>
         <ul>
           <li>
@@ -103,6 +106,14 @@ export default {
         { path: '/', page: 'Главная' },
         { path: '/shop', page: 'Магазин' },
         { path: '', page: 'Средства для ухода' },
+      ],
+      goods: [
+        { imgSrc: '/static/img/catalog-item-1.jpg', group: 'Набор для путешествий', brand: '«Baxter of California»', price: '2 900' },
+        { imgSrc: '/static/img/catalog-item-2.jpg', group: 'Увлажняющий кондиционер', brand: '«Baxter of California»', price: '750' },
+        { imgSrc: '/static/img/catalog-item-3.jpg', group: 'Гель для волос', brand: '«Suavecito»', price: '290' },
+        { imgSrc: '/static/img/catalog-item-4.jpg', group: 'Глина для укладки волос', brand: '«American Crew»', price: '500' },
+        { imgSrc: '/static/img/catalog-item-5.jpg', group: 'Гель для волос', brand: '«American Crew»', price: '300' },
+        { imgSrc: '/static/img/catalog-item-6.jpg', group: 'Набор для бритья', brand: '«Baxter of California»', price: '3900' },
       ],
     };
   },
@@ -202,6 +213,47 @@ input[type="radio"]:hover + .radio-indicator {
 }
 .shop .inner-content-right {
   display: block;
+  width: 700px;
+  padding-top: 24px;
   float: right;
+}
+.shop .catalog-item {
+  display: block;
+  padding: 0;
+  padding-bottom: 16px;
+  float: left;
+  background: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+.shop .catalog-item:hover {
+  box-shadow: 0px 5px 30px 0 rgba(0, 1, 1, 0.3);
+}
+.shop .catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+.catalog-item p {
+  text-transform: lowercase;
+  margin-top: 4px;
+  margin-left: 16px;
+  margin-bottom: 11px;
+  line-height: 19px;
+}
+.catalog-item p span.uppercase {
+  text-transform: uppercase;
+}
+.catalog-item .price {
+  display: inline-block;
+  background: #e5e5e5;
+  margin-left: 16px;
+  width: 100px;
+  padding: 10px 5px;
+  text-align: center;
+}
+.catalog-item .btn-buy {
+  display: inline-block;
+  padding: 10px 17px;
+  margin-left: -3px;
 }
 </style>

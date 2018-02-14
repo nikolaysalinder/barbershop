@@ -25,7 +25,7 @@
 export default {
   data() {
     return {
-      pageTitle: 'Прайс-лист',
+      pageTitle: 'Новости',
       breadcrumbs: [
         { path: '/', page: 'Главная' },
         { path: '/news', page: 'Новости' },
@@ -79,6 +79,7 @@ export default {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 .news-item figure {
   position: absolute;

@@ -21,6 +21,15 @@ export default {
 </script>
 
 <style>
+.contacts h1 {
+  color: #fff;
+}
+.contacts a.router-link-active {
+  color: #fff;
+}
+.contacts .breadcrumbs li::after {
+  background: #fff;
+}
 .inner-page-title h1{
   margin: 0;
   margin-bottom: 15px;

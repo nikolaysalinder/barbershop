@@ -183,16 +183,14 @@ export default {
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  width: 100%;
-  margin: 0;
   margin-bottom: 10px;
   padding: 7px;
-  padding-right: 10px;
+  padding-right: 20px;
   font-weight: inherit;
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   background-color: #f9f6f3;
   border: 2px solid #000000;
@@ -200,16 +198,16 @@ export default {
 .login-form input#login {
   background-image: url("../assets/img/sprite/user.png");
   background-repeat: no-repeat;
-  background-position: 290px 13px;
-  width: 312px;
+  background-position: 280px 13px;
+  width: 300px;
   box-sizing: border-box;
 }
 
 .login-form input#password {
   background-image: url("../assets/img/sprite/lock.png");
   background-repeat: no-repeat;
-  background-position: 290px 13px;
-  width: 312px;
+  background-position: 280px 13px;
+  width: 300px;
   box-sizing: border-box;
 }
 .login-form #restore {

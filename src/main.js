@@ -17,8 +17,10 @@ import Informations from './components/info/Informations';
 import News from './components/news/News';
 import Shop from './components/shop/Shop';
 import PageTitle from './components/PageTitle';
+import Contacts from './components/contacts/Contacts';
 
 Vue.component('app-header', Header);
+Vue.component('app-page-title', PageTitle);
 Vue.component('app-index-logo', IndexLogo);
 Vue.component('app-features', Features);
 Vue.component('app-index-content', IndexContent);
@@ -31,7 +33,7 @@ Vue.component('app-modal', Modal);
 Vue.component('app-info', Informations);
 Vue.component('app-news', News);
 Vue.component('app-shop', Shop);
-Vue.component('app-page-title', PageTitle);
+Vue.component('app-contacts', Contacts);
 
 Vue.config.productionTip = false;
 

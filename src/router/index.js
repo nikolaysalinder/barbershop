@@ -5,6 +5,7 @@ import Price from '@/components/price/Price';
 import Informations from '@/components/info/Informations';
 import News from '@/components/news/News';
 import Shop from '@/components/shop/Shop';
+import Contacts from '@/components/contacts/Contacts';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/shop',
       name: 'Shop',
       component: Shop,
+    },
+    {
+      path: '/contacts',
+      name: 'Contacts',
+      component: Contacts,
     },
   ],
 });

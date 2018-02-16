@@ -42,7 +42,8 @@ html {
 .overflow {
   overflow: hidden;
 }
-.body-overflow {
+main.container {
+  min-height: 1200px;
 }
 body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -54,11 +55,9 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
-  min-height: calc(100vh - 80px);
 }
 #app {
  min-width: 960px;
- height: 100%;
 }
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');
@@ -67,6 +66,7 @@ body {
 .container {
   width: 940px;
   padding: 0 10px;
+  height: 100%;
   margin: 0 auto;
 }
 .clearfix::after {

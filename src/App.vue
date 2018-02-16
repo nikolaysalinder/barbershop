@@ -57,6 +57,7 @@ body {
 }
 #app {
  min-width: 960px;
+ height: 100%;
 }
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');

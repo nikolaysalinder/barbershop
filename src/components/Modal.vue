@@ -2,7 +2,7 @@
   <transition name="modal">
     <div
     class="modal-overlay"
-    @click.esc.self="$emit('close')">
+    @click.self="$emit('close')">
       <div
       :class="['modal', {'modal-login': showLogin }, {'modal-map': showMap }]">
         <button

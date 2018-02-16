@@ -1,6 +1,5 @@
 {
   "name": "barbershop",
-  "homepage": "git@github.com:nikolaysalinder/barbershop",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "nikolaysalinder <nikolay.salinder@gmail.com>",

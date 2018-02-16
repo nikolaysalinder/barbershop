@@ -26,7 +26,8 @@
       </nav>
       <div class="user-block">
         <a
-        @click="showLogin = true">Вход</a>
+        @click="showLogin = true"
+        @keydown.esc="showLogin = false">Вход</a>
       </div>
     </div>
     <app-modal

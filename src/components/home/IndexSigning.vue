@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition name="fade" mode="out-in">
-      <div v-if="!isSend" class="index-signing" key="notSend">
+      <div v-if="!isSend" class="index-signing" key="signingForm">
         <h2 class="index-content-title">Записаться</h2>
         <p class="index-signing-text">
           Укажите желаемую дату и время и мы свяжемся
@@ -76,7 +76,7 @@ export default {
         this.appointment.time = '';
         this.appointment.name = '';
         this.appointment.phone = '';
-      }, 6000);
+      }, 3000);
     },
   },
 };

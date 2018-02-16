@@ -29,11 +29,11 @@ export default {
 
 <style>
 /*стили для разработки*/
-/*a, div, li, nav, ul, header,
+a, div, li, nav, ul, header,
 footer, .container, figure, form,
 label, h1, h2 {
   outline: 1px solid green;
-}*/
+}
 /*стили для разработки*/
 html {
   margin: 0;
@@ -41,9 +41,6 @@ html {
 }
 .overflow {
   overflow: hidden;
-}
-main.container {
-  min-height: 1200px;
 }
 body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -55,9 +52,11 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
+  min-height: 100%;
 }
 #app {
  min-width: 960px;
+ min-height: 100%;
 }
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');

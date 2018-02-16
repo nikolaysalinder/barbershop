@@ -49,10 +49,6 @@ export default {
   padding-bottom: 40px;
   letter-spacing: 0.2pt;
   box-shadow: inset 0px 20px 40px -5px #000;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 .main-footer a {
   color: #fff;

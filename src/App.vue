@@ -52,15 +52,13 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
-  height: 100%;
-}
-main.container {
-  padding-bottom: 240px;
 }
 #app {
  min-width: 960px;
- position: relative;
- min-height: 100%;
+}
+main.container {
+  padding-bottom: 240px;
+  height: calc(100vh - 100%);
 }
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');

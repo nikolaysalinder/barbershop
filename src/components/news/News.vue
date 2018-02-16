@@ -3,7 +3,9 @@
     <app-page-title
     :pageTitle="pageTitle"
     :breadcrumbs="breadcrumbs"></app-page-title>
-    <div class="inner-page">
+    <div
+    class="inner-page"
+    :class="{'inner-height': isMobile}">
       <div
       v-for="item in news"
       :key="item.id"
@@ -57,6 +59,11 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    isMobile() {
+      return document.body.parentElement.clientWidth < 500;
+    },
   },
   beforeCreate() {
     document.body.classList.add('inner');

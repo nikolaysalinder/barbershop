@@ -3,7 +3,9 @@
    <app-page-title
     :pageTitle="pageTitle"
     :breadcrumbs="breadcrumbs"></app-page-title>
-    <div class="inner-content">
+    <div
+    class="inner-content"
+    :class="{'inner-height': isMobile}">
       <h2 class="contacts-title">Наш адрес</h2>
         <p class="contacts-adress">
           Барбершоп «Бородинский»<br>
@@ -36,6 +38,11 @@ export default {
         { path: '/contacts', page: 'Контакты' },
       ],
     };
+  },
+  computed: {
+    isMobile() {
+      return document.body.parentElement.clientWidth < 500;
+    },
   },
   beforeCreate() {
     document.body.classList.remove('inner');

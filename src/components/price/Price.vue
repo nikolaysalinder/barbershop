@@ -3,7 +3,9 @@
     <app-page-title
     :pageTitle="pageTitle"
     :breadcrumbs="breadcrumbs"></app-page-title>
-    <div class="inner-content">
+    <div
+    class="inner-content"
+    :class="{'inner-height': isMobile}">
       <div class="big-heading">
         <h2>Истинно мужская классика</h2>
       </div>
@@ -69,6 +71,11 @@ export default {
         { path: '/price', page: 'Прайс-лист' },
       ],
     };
+  },
+  computed: {
+    isMobile() {
+      return document.body.parentElement.clientWidth < 500;
+    },
   },
   beforeCreate() {
     document.body.classList.add('inner');

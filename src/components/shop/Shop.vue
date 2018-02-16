@@ -3,7 +3,9 @@
     <app-page-title
     :pageTitle="pageTitle"
     :breadcrumbs="breadcrumbs"></app-page-title>
-    <div class="inner-content">
+    <div
+    class="inner-content"
+    :class="{'inner-height': isMobile}">
       <div class="inner-content-left">
         <form class="catalog-form" action="#" method="post">
           <h2 class="inner-content-title">Производители:</h2>
@@ -116,6 +118,11 @@ export default {
         { imgSrc: './static/img/catalog-item-6.jpg', group: 'Набор для бритья', brand: '«Baxter of California»', price: '3900' },
       ],
     };
+  },
+  computed: {
+    isMobile() {
+      return document.body.parentElement.clientWidth < 500;
+    },
   },
   beforeCreate() {
     document.body.classList.add('inner');

@@ -29,11 +29,11 @@ export default {
 
 <style>
 /*стили для разработки*/
-a, div, li, nav, ul, header,
+/*a, div, li, nav, ul, header,
 footer, .container, figure, form,
 label, h1, h2 {
   outline: 1px solid green;
-}
+}*/
 /*стили для разработки*/
 html {
   margin: 0;
@@ -56,10 +56,6 @@ body {
 #app {
  min-width: 960px;
 }
-main.container {
-  padding-bottom: 240px;
-  height: calc(100vh - 100%);
-}
 .inner {
   background: #f8f3f0 url('./assets/img/inner-bg.png');
   color: #000;
@@ -67,7 +63,6 @@ main.container {
 .container {
   width: 940px;
   padding: 0 10px;
-  height: 100%;
   margin: 0 auto;
 }
 .clearfix::after {

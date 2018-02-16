@@ -3,7 +3,9 @@
     <app-page-title
     :pageTitle="pageTitle"
     :breadcrumbs="breadcrumbs"></app-page-title>
-    <div class="inner-content">
+    <div
+    class="inner-content"
+    :class="{'inner-height': isMobile}">
       <div
       class="info-item"
       v-for="info in infos"
@@ -36,6 +38,11 @@ export default {
       ],
     };
   },
+  computed: {
+    isMobile() {
+      return document.body.parentElement.clientWidth < 500;
+    },
+  },
   beforeCreate() {
     document.body.classList.add('inner');
   },
@@ -43,7 +50,8 @@ export default {
 </script>
 
 <style>
-.info .inner-content {
+.inner-height {
+  height: 1400px;
 }
 .info .info-item {
   background: #fff;

@@ -25,11 +25,9 @@ export default {
   },
   created() {
     const html = document.body.parentElement;
-    const body = document.body;
     const scrollWidth = window.innerWidth - html.clientWidth;
     html.style.marginLeft = `${-1 * scrollWidth}px`;
     html.classList.add('overflow');
-    body.classList.add('body-overflow');
   },
   beforeDestroy() {
     const html = document.body.parentElement;

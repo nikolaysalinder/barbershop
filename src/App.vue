@@ -54,6 +54,7 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
+  min-height: calc(100vh - 80px);
 }
 #app {
  min-width: 960px;

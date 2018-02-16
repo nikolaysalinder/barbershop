@@ -4,7 +4,7 @@
     <main class="container clearfix">
       <router-view></router-view>
     </main>
-    <iframe v-if="isContacts" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aecd1452e974fd4ce0e372fbf0afc5df4b17e5df1d975aaa87ac4a7c19456b9a4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    <iframe v-if="isContacts" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aecd1452e974fd4ce0e372fbf0afc5df4b17e5df1d975aaa87ac4a7c19456b9a4&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     <app-footer></app-footer>
   </div>
 </template>
@@ -52,10 +52,14 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
-  min-height: 100%;
+  height: 100%;
+}
+main.container {
+  padding-bottom: 240px;
 }
 #app {
  min-width: 960px;
+ position: relative;
  min-height: 100%;
 }
 .inner {

@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router/index';
+
 import Header from './components/Header';
 import IndexLogo from './components/home/IndexLogo';
 import Features from './components/home/Features';

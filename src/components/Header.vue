@@ -48,13 +48,14 @@
         type="password"
         name="password"
         placeholder="8 символов">
-        <input
-        id="login-checkbox"
-        type="checkbox"
-        name="remember">
-        <span class="checkbox-indicator"></span>
         <label
-        for="login-checkbox">Запомните меня</label>
+          for="login-checkbox">
+          <input
+          id="login-checkbox"
+          type="checkbox"
+          name="remember">
+          <span class="checkbox-indicator"></span>
+        Запомните меня</label>
         <a id="restore">Я забыл пароль!</a>
         <button class="btn-login" type="submit">Войти</button>
       </form>

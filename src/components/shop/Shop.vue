@@ -71,11 +71,13 @@
         v-for="good in goods"
         :key="good.imgSrc"
         class="catalog-item">
-          <img
-          :src="good.imgSrc"
-          :alt="good.brand"
-          width="220"
-          height="165">
+          <figure class="img-wrapper">
+            <img
+            :src="good.imgSrc"
+            :alt="good.brand"
+            width="220"
+            height="165">
+          </figure>
           <p>{{ good.group }}<br> <span class="uppercase">{{ good.brand }}</span></p>
           <span class="price">{{ good.price }} ₽</span>
           <a href="#" class="btn btn-buy">Купить</a>
@@ -227,6 +229,7 @@ input[type="radio"]:hover + .radio-indicator {
 .shop .catalog-item {
   display: block;
   padding: 0;
+  width: 220px;
   padding-bottom: 16px;
   float: left;
   background: #fff;
@@ -240,6 +243,12 @@ input[type="radio"]:hover + .radio-indicator {
 }
 .shop .catalog-item:nth-child(3n) {
   margin-right: 0;
+}
+.shop figure.img-wrapper {
+  display: block;
+  width: 220px;
+  height: 165px;
+  margin: 0;
 }
 .catalog-item p {
   text-transform: lowercase;

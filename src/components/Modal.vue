@@ -112,12 +112,31 @@ export default {
   transition: all 0.5s;
 }
 .modal-leave {
-
 }
 .modal-leave-active {
   transform: translateX(-50px);
   opacity: 0;
   transition-delay: 1s;
   transition: all .5s;
+}
+@media screen and (max-width: 562px) {
+  .modal-content-close::before,
+  .modal-content-close::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    width: 19px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 1px;
+  }
+  .modal-content-close::before {
+    transform: rotate(45deg);
+  }
+
+  .modal-content-close::after {
+    transform: rotate(-45deg);
+  }
 }
 </style>

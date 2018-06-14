@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <app-index-logo></app-index-logo>
     <app-features></app-features>
     <app-index-content>
@@ -83,8 +83,9 @@ export default {
 </script>
 
 <style>
+
 .index {
-/*  background: #000 url("./../../assets/img/index-bg.jpg");*/
+ /* background: #000 url("./../../assets/img/index-bg.jpg"); */
   background-position: 50% 0;
   background-size: 2520px;
   background-repeat: no-repeat;

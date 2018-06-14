@@ -133,6 +133,11 @@ export default {
 </script>
 
 <style>
+.shop {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .shop .inner-content {
   padding-top: 19px;
 }

@@ -39,7 +39,10 @@ export default {
 
 <style>
   .features {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 65px;
+    width: 960px;
   }
   .features-item {
     float: left;

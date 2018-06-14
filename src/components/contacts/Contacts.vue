@@ -51,6 +51,11 @@ export default {
 </script>
 
 <style>
+.contacts {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contacts .inner-content {
   height: 200px;
 }

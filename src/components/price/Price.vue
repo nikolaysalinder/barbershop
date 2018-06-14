@@ -84,6 +84,11 @@ export default {
 </script>
 
 <style>
+.price {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .inner-page {
   margin-top: -8px;
   padding: 0

@@ -8,8 +8,7 @@
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
@@ -20,11 +19,13 @@ export default {
   padding-bottom: 50px;
   font-weight: 700;
   color: #000;
-  background-image:
-  url('../../assets/img/shadow-thick.png'),
-  url('../../assets/img/inner-bg.png');
+  background-image: url("../../assets/img/shadow-thick.png"),
+    url("../../assets/img/inner-bg.png");
   background-position: 465px 50px, 0 0;
   background-repeat: no-repeat, repeat;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
   margin-bottom: 35px;
 }
 .index-content-title {
@@ -64,7 +65,7 @@ p.index-content-contacts {
   min-height: 340px;
   position: relative;
 }
-.index-content-open{
+.index-content-open {
   display: block;
 }
 #index-contacts .btn-map {
@@ -80,5 +81,4 @@ p.index-content-contacts {
   padding-left: 24px;
   padding-right: 24px;
 }
-
 </style>

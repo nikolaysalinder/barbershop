@@ -61,6 +61,9 @@ export default {
 .gallery {
   height: 260px;
   position: relative;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallery figure {
   border: 7px solid #fff;

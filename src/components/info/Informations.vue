@@ -50,6 +50,11 @@ export default {
 </script>
 
 <style>
+.info {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .inner-height {
   height: 1400px;
 }

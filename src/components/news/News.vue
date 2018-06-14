@@ -72,6 +72,11 @@ export default {
 </script>
 
 <style>
+.news {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .news .inner-page {
   display: flex;
   flex-wrap: wrap;

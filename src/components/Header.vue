@@ -153,6 +153,7 @@ export default {
   width: 110px;
   text-align: right;
   position: relative;
+  cursor: pointer;
 }
 .user-block a::before {
   content: '';

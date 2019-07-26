@@ -157,6 +157,7 @@ export default {
   margin-top: 13px;
   position: relative;
   transition: all .5s;
+  cursor: pointer;
 }
 .catalog-form label:hover {
   color: #663d15;

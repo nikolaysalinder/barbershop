@@ -80,7 +80,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: background .5s;
-  cursor:default;
+  cursor:pointer;
 }
 .btn:hover {
   background: #663d15;

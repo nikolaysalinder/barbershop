@@ -5,7 +5,7 @@
         <p class="footer-adress">
           Барбершоп «Бородинский»<br>
           адрес: г. Санкт-Петербург,ул. Б.Конюшенная, д. 19/8<br>
-          <a @click.prevent="showMap = true">Как нас найти?</a><br>
+          <a href="#" @click.prevent="showMap = true">Как нас найти?</a><br>
           <app-modal
           v-if="showMap"
           :showMap="showMap"
@@ -23,7 +23,7 @@
       </div>
       <div class="footer-developer">
         <p>Разработано:</p>
-        <a class="developer" href="http://www.nikolaysalinder.ru">NikolaySalinder.ru</a>
+        <a class="developer" href="http://www.salinder.ru">Salinder.ru</a>
       </div>
     </div>
   </footer>
@@ -52,7 +52,6 @@ export default {
 }
 .main-footer a {
   color: #fff;
-  cursor:default;
 }
 .footer-contacts {
   float: left;

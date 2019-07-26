@@ -179,6 +179,7 @@ export default {
   font-weight: 700;
   text-transform: uppercase;
   transition: background .5s;
+  cursor: pointer;
 }
 .login-form input:focus,
 .login-form input:hover {
@@ -225,6 +226,9 @@ export default {
   color: #663d15;
   cursor: pointer;
   background: transparent;
+}
+[for="login-checkbox"] {
+  cursor: pointer;
 }
 
 .login-form .btn-login:hover {
